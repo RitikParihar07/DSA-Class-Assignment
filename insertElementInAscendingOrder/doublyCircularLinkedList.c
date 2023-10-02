@@ -11,10 +11,7 @@ typedef struct node Node;
 
 Node *createNode(int key) {
     Node *newNode = (Node *)malloc(sizeof(Node));
-    if (newNode == NULL) {
-        printf("Memory allocation failed\n");
-        exit(1);
-    }
+   
     newNode->info = key;
     newNode->prev = NULL;
     newNode->next = NULL;
